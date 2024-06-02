@@ -1,0 +1,94 @@
+margin: 0;
+padding: 0;
+}
+
+/* Styling container with flexbox */
+.container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 100vh; /* Viewport height */
+background-color: #f0f0f0;
+}
+
+/* Styling individual boxes */
+.box {
+width: 100px;
+height: 100px;
+background-color: #3498db;
+color: #fff;
+text-align: center;
+line-height: 100px;
+border-radius: 5px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+transition: background-color 0.3s ease; /* Adding transition for smooth hover effect */
+}
+
+/* Hover effect */
+.box:hover {
+background-color: #2980b9;
+}
+
+/* Custom animation */
+@keyframes slideIn {
+from {
+    transform: translateX(-100%);
+}
+to {
+    transform: translateX(0);
+}
+}
+
+/* Applying animation */
+.box:nth-child(odd) {
+animation: slideIn 0.5s ease-out forwards;
+}
+/* Resetting default margin and padding */
+body, html {
+margin: 0;
+padding: 0;
+}
+
+/* Styling the navigation */
+nav {
+background-color: #333;
+padding: 10px 0;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+display: inline;
+}
+
+/* Styling the links */
+a {
+color: #fff;
+text-decoration: none;
+padding: 10px 20px;
+transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+a:hover {
+background-color: #555;
+}
+
+/* Active state */
+a:active {
+background-color: #777;
+}
+
+/* Focus state */
+a:focus {
+outline: none; /* Remove default focus outline */
+background-color: #888;
+}
+
+</div>
+</body>
+</html>
